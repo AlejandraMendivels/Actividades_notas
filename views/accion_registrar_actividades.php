@@ -18,5 +18,5 @@ $resultado = $actividadController->create($actividad);
 if ($resultado) {
     echo '<h1>Genial ,Haz registrado una actividad </h1>';
 } else {
-    echo '<h1>Lo siento ,No se registrao la actividad</h1>';
+    echo '<h1>Lo siento ,No se registrar la actividad</h1>';
 }
