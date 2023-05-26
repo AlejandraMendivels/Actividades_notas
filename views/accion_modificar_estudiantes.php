@@ -19,6 +19,9 @@ if ($resultado) {
 } else {
     echo '<h1>Lo siento no se modificaron los cambios</h1>';
 }
-?>
-<br>
+
+
+
+
+
 
