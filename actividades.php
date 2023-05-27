@@ -7,7 +7,7 @@ require 'controllers/actividadController.php';
 use actividadController\ActividadController;
 
 $actividadController = new ActividadController();
-
+$codigoEstudiante = $_GET['codigo'];
 $actividades = $actividadController->read($codigoEstudiante);
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ $actividades = $actividadController->read($codigoEstudiante);
 <body>
     <main>
         <h1>Lista de actividades</h1>
-        <a href="views/form_actividad.php">Registrar actividad</a>
+        <a href="views/form_actividades.php">Registrar actividad</a>
         <table>
             <thead>
                 <tr>
@@ -38,8 +38,8 @@ $actividades = $actividadController->read($codigoEstudiante);
                     echo '  <td>' . $actividad->getDescripcion() . '</td>';
                     echo '  <td>' . $actividad->getNota() . '</td>';
                     echo '  <td>';
-                    echo '      <a href="views/accion_modificar_actividad.php?id=' . $actividad->getId() . '">modificar</a>';
-                    echo '      <a href="views/accion_borrar_actividad.php?id=' . $actividad->getId() . '">borrar</a>';
+                    echo '      <a href="views/accion_modificar_actividades.php?id=' . $actividad->getId() . '">modificar</a>';
+                    echo '      <a href="views/accion_borrar_actividades.php?id=' . $actividad->getId() . '">borrar</a>';
                     echo '  </td>';
                     echo '</tr>';
                 }
