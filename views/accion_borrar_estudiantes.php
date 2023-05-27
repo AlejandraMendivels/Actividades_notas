@@ -7,7 +7,7 @@ require '../controllers/estudiantesController.php';
 use estudiantesController\EstudiantesController;
 
 $estudiantesController = new EstudiantesController();
-$resultado = $estudianteController->delete($_GET['codigo']);
+$resultado = $estudiantesController->delete($_GET['codigo']);
 if ($resultado) {
     echo '<h1>Se ha eliminado al estudiante</h1>';
 } else {

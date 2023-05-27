@@ -38,7 +38,7 @@ $actividades = $actividadController->read($codigoEstudiante);
                     echo '  <td>' . $actividad->getDescripcion() . '</td>';
                     echo '  <td>' . $actividad->getNota() . '</td>';
                     echo '  <td>';
-                    echo '      <a href="views/accion_modificar_actividades.php?id=' . $actividad->getId() . '">modificar</a>';
+                    echo '      <a href="views/form_actividades.php?id=' . $actividad->getId() . '">modificar</a>';
                     echo '      <a href="views/accion_borrar_actividades.php?id=' . $actividad->getId() . '">borrar</a>';
                     echo '  </td>';
                     echo '</tr>';
