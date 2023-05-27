@@ -21,7 +21,7 @@ $actividades = $actividadController->read($codigoEstudiante);
 <body>
     <main>
         <h1>Lista de actividades</h1>
-        <a href="views/form_actividades.php?codigo=1">Registrar actividad</a>
+        <a href="views/form_actividades.php?codigo=<?php echo $codigoEstudiante; ?>">Registrar actividad</a>
         <table>
             <thead>
                 <tr>
