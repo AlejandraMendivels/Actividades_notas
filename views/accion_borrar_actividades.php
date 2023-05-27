@@ -1,8 +1,8 @@
 <?php
-require '../../models/actividad.php';
-require '../../controllers/conexionDbController.php';
-require '../../controllers/baseController.php';
-require '../../controllers/actividadController.php';
+require '../models/actividad.php';
+require '../controllers/conexionDbController.php';
+require '../controllers/baseController.php';
+require '../controllers/actividadController.php';
 
 use actividadController\ActividadController;
 

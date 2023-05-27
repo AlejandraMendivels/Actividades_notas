@@ -1,8 +1,8 @@
 <?php
-require '../../models/actividad.php';
-require '../../controllers/conexionDbController.php';
-require '../../controllers/baseController.php';
-require '../../controllers/actividadController.php';
+require '../models/actividad.php';
+require '../controllers/conexionDbController.php';
+require '../controllers/baseController.php';
+require '../controllers/actividadController.php';
 
 use actividad\Actividad;
 use actividadController\ActividadController;
@@ -12,14 +12,14 @@ $id = empty($_GET['id']) ? '' : $_GET['id'];
 $actividad = new Actividad();
 if (!empty($id)) {
     $titulo = 'Modificar actividad';
-    $urlAction = "accion_modificar_actividad.php?";
+    $urlAction = "accion_modificar_actividades.php?";
     $actividadController = new ActividadController();
     $actividad = $actividadController->readRow($id); 
 }else{
     echo($_GET['codigo']);
     $codigo = $_GET['codigo'];
     $titulo = 'Registrar actividad';
-    $urlAction = "accion_registro_actividad.php?codigo=".$codigo;
+    $urlAction = "accion_registrar_actividades.php?codigo=".$codigo;
 }
 ?>
 <!DOCTYPE html>

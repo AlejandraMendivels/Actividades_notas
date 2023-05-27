@@ -1,19 +1,19 @@
 <?php
-require '../../models/estudiante.php';
-require '../../controllers/conexionDbController.php';
-require '../../controllers/baseController.php';
-require '../../controllers/estudiantesController.php';
+require '../models/estudiante.php';
+require '../controllers/conexionDbController.php';
+require '../controllers/baseController.php';
+require '../controllers/estudiantesController.php';
 
 use estudiante\Estudiante;
 use estudiantesController\EstudiantesController;
 
 $codigo = empty($_GET['codigo']) ? '' : $_GET['codigo'];
 $titulo = 'Registrar estudiante';
-$urlAction = "accion_registro_estudiante.php";
+$urlAction = "accion_registar_estudiantes.php";
 $estudiante = new Estudiante();
 if (!empty($codigo)) {
     $titulo = 'Modificar estudiante';
-    $urlAction = "accion_modificar_estudiante.php";
+    $urlAction = "accion_modificar_estudiantes.php";
     $estudiantesController = new EstudiantesController();
     $estudiante = $estudiantesController->readRow($codigo); 
 }

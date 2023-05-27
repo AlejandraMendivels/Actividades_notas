@@ -1,8 +1,8 @@
 <?php
-require '../../models/estudiante.php';
-require '../../controllers/conexionDbController.php';
-require '../../controllers/baseController.php';
-require '../../controllers/estudiantesController.php';
+require '../models/estudiante.php';
+require '../controllers/conexionDbController.php';
+require '../controllers/baseController.php';
+require '../controllers/estudiantesController.php';
 
 use estudiantesController\EstudiantesController;
 
