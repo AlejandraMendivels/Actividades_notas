@@ -15,6 +15,7 @@ if (!empty($id)) {
     $urlAction = "accion_modificar_actividades.php?";
     $actividadController = new ActividadController();
     $actividad = $actividadController->readRow($id); 
+    
 }else{
     echo($_GET['codigo']);
     $codigo = $_GET['codigo'];
@@ -56,6 +57,7 @@ if (!empty($id)) {
             <br>
             <button type="submit">Guardar Actividad</button>
         </form>
+
     </main>
 </body>
 

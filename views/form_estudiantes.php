@@ -49,6 +49,7 @@ if (!empty($codigo)) {
             <br>
             <button type="submit">Guardar Estudiante</button>
         </form>
+        
     </main>
 </body>
 
