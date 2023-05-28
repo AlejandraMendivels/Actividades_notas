@@ -65,4 +65,10 @@ table {
   .btn-registrar:hover {
     background-color: #219651;
   }
-  
+
+h1 {
+  color: #3cf846;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
